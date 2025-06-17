@@ -1,0 +1,125 @@
+local PlayerName = "Artem057_YT"
+
+
+local Player = game.Players:WaitForChild(PlayerName)
+
+local ArteHack = Instance.new("ScreenGui", Player.PlayerGui)
+ArteHack.Name = "ArteGui"
+ArteHack.Enabled = true
+
+local MessageFrame = Instance.new("Frame", ArteHack)
+MessageFrame.BackgroundColor3 = Color3.new(0.258824, 0.258824, 0.258824)
+MessageFrame.BackgroundTransparency = 0.2
+MessageFrame.Position = UDim2.new(0.25, 0, 0.368, 0)
+MessageFrame.Size = UDim2.new(0.3, 0, 0.09, 0)
+MessageFrame.BorderSizePixel = 0
+MessageFrame.Name = "Message"
+MessageFrame.Visible = false
+
+local MessageFrameUIDragDetector = Instance.new("UIDragDetector", MessageFrame)
+
+local CloseButton = Instance.new("TextButton", MessageFrame)
+CloseButton.Text = "x"
+CloseButton.Transparency = 1
+CloseButton.Position = UDim2.new(0.871, 0, -0.063, 0)
+CloseButton.Size = UDim2.new(0.129, 0, 1.042, 0)
+CloseButton.Visible = true
+CloseButton.TextTransparency = 0
+CloseButton.TextColor3 = Color3.new(1, 1, 1)
+CloseButton.TextScaled = true
+CloseButton.RichText = true
+
+local TextLabel = Instance.new("TextLabel", MessageFrame)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Visible = true
+TextLabel.Text = "Arte Gui"
+TextLabel.TextScaled = true
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.RichText = true
+TextLabel.Position = UDim2.new(0, 0, 0, 0)
+TextLabel.Size = UDim2.new(0.455, 0, 0.979, 0)
+
+local UIStroke = Instance.new("UIStroke", TextLabel)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+
+local Frame = Instance.new("Frame", MessageFrame)
+Frame.BackgroundColor3 = Color3.new(0.329412, 0.329412, 0.329412)
+Frame.BackgroundTransparency = 0.3
+Frame.Position = UDim2.new(0, 0, 0.996, 0)
+Frame.Size = UDim2.new(1, 0, 2.875, 0)
+Frame.BorderSizePixel = 0
+
+local TextLabel = Instance.new("TextLabel", Frame)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Visible = true
+TextLabel.TextScaled = true
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.RichText = true
+TextLabel.Position = UDim2.new(0.08, 0, 0.051, 0)
+TextLabel.Size = UDim2.new(0.84, 0, 0.362, 0)
+
+local UIStroke = Instance.new("UIStroke", TextLabel)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+
+local OkButton = Instance.new("TextButton", Frame)
+OkButton.Text = "OK"
+OkButton.BackgroundColor3 = Color3.new(0,0,0)
+OkButton.BackgroundTransparency = 0.55
+OkButton.Position = UDim2.new(0.589, 0, 0.652, 0)
+OkButton.Size = UDim2.new(0.364, 0, 0.29, 0)
+OkButton.TextScaled = true
+OkButton.TextColor3 = Color3.new(1,1,1)
+OkButton.RichText = true
+OkButton.Name = "OkButton"
+
+local UIStroke = Instance.new("UIStroke", OkButton)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+
+local UIStroke = Instance.new("UIStroke", OkButton)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+local UICorner = Instance.new("UICorner", OkButton)
+UICorner.CornerRadius = UDim.new(0, 8)
+
+local CancelButton = Instance.new("TextButton", Frame)
+CancelButton.Text = "Cancel"
+CancelButton.BackgroundColor3 = Color3.new(0,0,0)
+CancelButton.BackgroundTransparency = 0.55
+CancelButton.Position = UDim2.new(0.044, 0, 0.652, 0)
+CancelButton.Size = UDim2.new(0.364, 0, 0.29, 0)
+CancelButton.TextScaled = true
+CancelButton.TextColor3 = Color3.new(1,1,1)
+CancelButton.RichText = true
+CancelButton.Name = "CancelButton"
+
+local UIStroke = Instance.new("UIStroke", CancelButton)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+
+local UIStroke = Instance.new("UIStroke", CancelButton)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+local UICorner = Instance.new("UICorner", CancelButton)
+UICorner.CornerRadius = UDim.new(0, 8)
+
+local Frame = Instance.new("Frame", ArteHack)
+Frame.BackgroundTransparency = 0.35
+Frame.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.233, 0, 0.233, 0)
+Frame.Size = UDim2.new(0.538, 0, 0.085, 0)
+
+local UIDragDetector = Instance.new("UIDragDetector", Frame)
