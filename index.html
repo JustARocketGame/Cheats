@@ -464,7 +464,7 @@ ForsakenFrame.KEB.MouseButton1Up:Connect(function()
 end)
 
 local IEBEnabled = false
-ForsakenFrame.KEB.MouseButton1Up:Connect(function()
+ForsakenFrame.IEB.MouseButton1Up:Connect(function()
 	if KEBEnabled == false then
 		for _, item in pairs(game.Workspace.Map.Ingame:GetChildren()) do
 			if item then
@@ -472,7 +472,7 @@ ForsakenFrame.KEB.MouseButton1Up:Connect(function()
 
 					local ESP = Instance.new("Highlight", item)
 					ESP.Enabled = true
-					ESP.OutlineColor = Color3.new(1, 0, 0.0156863)
+					ESP.OutlineColor = Color3.new(0.0156863, 1, 0)
 					ESP.FillTransparency = 1
 					ESP.OutlineTransparency = 0
 					ESP.Name = "ArteGui_ESP"
