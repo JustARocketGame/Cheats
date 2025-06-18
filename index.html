@@ -13,6 +13,7 @@ MessageFrame.Size = UDim2.new(0.3, 0, 0.09, 0)
 MessageFrame.BorderSizePixel = 0
 MessageFrame.Name = "Message"
 MessageFrame.Visible = false
+MessageFrame.ZIndex = 5
 
 local MessageFrameUIDragDetector = Instance.new("UIDragDetector", MessageFrame)
 
@@ -27,6 +28,7 @@ CloseButton.TextColor3 = Color3.new(1, 1, 1)
 CloseButton.TextScaled = true
 CloseButton.Name = "CloseButton"
 CloseButton.RichText = true
+CloseButton.ZIndex = 6
 
 local TextLabel = Instance.new("TextLabel", MessageFrame)
 TextLabel.BackgroundTransparency = 1
@@ -37,6 +39,7 @@ TextLabel.TextColor3 = Color3.new(1, 1, 1)
 TextLabel.RichText = true
 TextLabel.Position = UDim2.new(0, 0, 0, 0)
 TextLabel.Size = UDim2.new(0.455, 0, 0.979, 0)
+TextLabel.ZIndex = 6
 
 local UIStroke = Instance.new("UIStroke", TextLabel)
 UIStroke.Transparency = 0
@@ -49,6 +52,7 @@ Frame.BackgroundTransparency = 0.3
 Frame.Position = UDim2.new(0, 0, 0.996, 0)
 Frame.Size = UDim2.new(1, 0, 2.875, 0)
 Frame.BorderSizePixel = 0
+Frame.ZIndex = 5
 
 local TextLabel = Instance.new("TextLabel", Frame)
 TextLabel.BackgroundTransparency = 1
@@ -58,6 +62,7 @@ TextLabel.TextColor3 = Color3.new(1, 1, 1)
 TextLabel.RichText = true
 TextLabel.Position = UDim2.new(0.08, 0, 0.051, 0)
 TextLabel.Size = UDim2.new(0.84, 0, 0.362, 0)
+TextLabel.ZIndex = 6
 
 local UIStroke = Instance.new("UIStroke", TextLabel)
 UIStroke.Transparency = 0
@@ -74,6 +79,7 @@ OkButton.TextScaled = true
 OkButton.TextColor3 = Color3.new(1,1,1)
 OkButton.RichText = true
 OkButton.Name = "OkButton"
+OkButton.ZIndex = 6
 
 local UIStroke = Instance.new("UIStroke", OkButton)
 UIStroke.Transparency = 0
@@ -99,6 +105,7 @@ CancelButton.TextScaled = true
 CancelButton.TextColor3 = Color3.new(1,1,1)
 CancelButton.RichText = true
 CancelButton.Name = "CancelButton"
+CancelButton.ZIndex = 6
 
 local UIStroke = Instance.new("UIStroke", CancelButton)
 UIStroke.Transparency = 0
@@ -167,6 +174,98 @@ Frame2.BackgroundColor3 = Color3.new(0.309804, 0.309804, 0.309804)
 Frame2.BorderSizePixel = 0
 Frame2.Position = UDim2.new(0, 0, 0.986, 0)
 Frame2.Size = UDim2.new(1, 0, 6.951, 0)
+
+
+local Universal = Instance.new("Frame", Frame2)
+Universal.Name = "Universal"
+Universal.BackgroundTransparency = 1
+Universal.Position = UDim2.new(0.249, 0, 0.01, 0)
+Universal.Visible = false
+Universal.Size = UDim2.new(0.751, 0, 0.988, 0)
+
+local WalkSpeed = Instance.new("TextButton", Universal)
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.BackgroundTransparency = 0.55
+WalkSpeed.BackgroundColor3 = Color3.new(0, 0, 0)
+WalkSpeed.BorderSizePixel = 0
+WalkSpeed.Position = UDim2.new(0.038, 0, 0.243, 0)
+WalkSpeed.Size = UDim2.new(0.384, 0, 0.162, 0)
+WalkSpeed.Text = "Change Walk Speed"
+WalkSpeed.TextScaled = true
+WalkSpeed.TextColor3 = Color3.new(1, 1, 1)
+WalkSpeed.RichText = true
+
+local UIStroke = Instance.new("UIStroke", WalkSpeed)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+
+local UIStroke = Instance.new("UIStroke", WalkSpeed)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+local UICorner = Instance.new("UICorner", WalkSpeed)
+UICorner.CornerRadius = UDim.new(0, 8)
+
+local JumpPower = Instance.new("TextButton", Universal)
+JumpPower.Name = "JumpPower"
+JumpPower.BackgroundTransparency = 0.55
+JumpPower.BackgroundColor3 = Color3.new(0, 0, 0)
+JumpPower.BorderSizePixel = 0
+JumpPower.Position = UDim2.new(0.455, 0, 0.243, 0)
+JumpPower.Size = UDim2.new(0.384, 0, 0.162, 0)
+JumpPower.Text = "Change Jump Power"
+JumpPower.TextScaled = true
+JumpPower.TextColor3 = Color3.new(1, 1, 1)
+JumpPower.RichText = true
+
+local UIStroke = Instance.new("UIStroke", JumpPower)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+
+local UIStroke = Instance.new("UIStroke", JumpPower)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+local UICorner = Instance.new("UICorner", JumpPower)
+UICorner.CornerRadius = UDim.new(0, 8)
+
+
+local TextBox = Instance.new("TextBox", Universal)
+TextBox.Name = "TextBox"
+TextBox.BackgroundTransparency = 0.55
+TextBox.BackgroundColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.248, 0, 0.023, 0)
+TextBox.Size = UDim2.new(0.384, 0, 0.162, 0)
+TextBox.Text = ""
+TextBox.TextScaled = true
+TextBox.TextColor3 = Color3.new(1, 1, 1)
+TextBox.RichText = true
+TextBox.PlaceholderText = "Argument"
+
+local UIStroke = Instance.new("UIStroke", TextBox)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+
+local UIStroke = Instance.new("UIStroke", TextBox)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+local UICorner = Instance.new("UICorner", TextBox)
+UICorner.CornerRadius = UDim.new(0, 8)
+
 
 local Credits = Instance.new("Frame", Frame2)
 Credits.Name = "Credits"
@@ -282,6 +381,8 @@ ButtonsFrame.BackgroundColor3 = Color3.new(0, 0, 0)
 ButtonsFrame.BackgroundTransparency = 0.7
 ButtonsFrame.Name = "ButtonsFrame"
 
+
+
 local ForsakenButton = Instance.new("TextButton", ButtonsFrame)
 ForsakenButton.Name = "ForsakenButton"
 ForsakenButton.BackgroundTransparency = 0.65
@@ -308,6 +409,7 @@ UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 local UICorner = Instance.new("UICorner", ForsakenButton)
 UICorner.CornerRadius = UDim.new(0, 8)
 
+
 local CreditsButton = Instance.new("TextButton", ButtonsFrame)
 CreditsButton.Name = "CreditsButton"
 CreditsButton.BackgroundTransparency = 0.65
@@ -333,6 +435,35 @@ UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
 local UICorner = Instance.new("UICorner", CreditsButton)
 UICorner.CornerRadius = UDim.new(0, 8)
+
+
+local UniversalButton = Instance.new("TextButton", ButtonsFrame)
+UniversalButton.Name = "UniversalButton"
+UniversalButton.BackgroundTransparency = 0.65
+UniversalButton.BackgroundColor3 = Color3.new(0, 0, 0)
+UniversalButton.Position = UDim2.new(0.127, 0, 0.436, 0)
+UniversalButton.Size = UDim2.new(0.74, 0, 0.125, 0)
+UniversalButton.Text = "Universal"
+UniversalButton.TextScaled = true
+UniversalButton.RichText = true
+UniversalButton.TextColor3 = Color3.new(1, 1, 1)
+
+local UIStroke = Instance.new("UIStroke", UniversalButton)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+
+local UIStroke = Instance.new("UIStroke", UniversalButton)
+UIStroke.Transparency = 0
+UIStroke.Thickness = 3
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+local UICorner = Instance.new("UICorner", UniversalButton)
+UICorner.CornerRadius = UDim.new(0, 8)
+
+
 
 spawn(function()
 	while task.wait() do
@@ -394,11 +525,19 @@ end)
 Frame.Frame.ButtonsFrame.ForsakenButton.MouseButton1Up:Connect(function()
 	Frame.Frame.Forsaken.Visible = true
 	Frame.Frame.Credits.Visible = false
+	Frame.Frame.Universal.Visible = false
 end)
 
 Frame.Frame.ButtonsFrame.CreditsButton.MouseButton1Up:Connect(function()
 	Frame.Frame.Forsaken.Visible = false
 	Frame.Frame.Credits.Visible = true
+	Frame.Frame.Universal.Visible = false
+end)
+
+Frame.Frame.ButtonsFrame.UniversalButton.MouseButton1Up:Connect(function()
+	Frame.Frame.Universal.Visible = true
+	Frame.Frame.Forsaken.Visible = false
+	Frame.Frame.Credits.Visible = false
 end)
 
 
@@ -490,4 +629,14 @@ ForsakenFrame.IEB.MouseButton1Up:Connect(function()
 		end
 	end
 	IEBEnabled = not IEBEnabled
+end)
+
+local Universal = ArteHack.Frame.Frame.Universal
+Universal.WalkSpeed.MouseButton1Up:Connect(function()
+	Player.Character.Humanoid.WalkSpeed = Universal.TextBox.Text
+end)
+
+Universal.JumpPower.MouseButton1Up:Connect(function()
+	Player.Character.Humanoid.UseJumpPower = true
+	Player.Character.Humanoid.JumpPower = Universal.TextBox.Text
 end)
