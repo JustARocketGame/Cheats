@@ -606,7 +606,7 @@ end)
 
 local IEBEnabled = false
 ForsakenFrame.IEB.MouseButton1Up:Connect(function()
-	if KEBEnabled == false then
+	if IEBEnabled == false then
 		for _, item in pairs(game.Workspace.Map.Ingame:GetChildren()) do
 			if item then
 				if item.Name ~= "Map" then
