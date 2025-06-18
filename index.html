@@ -563,8 +563,10 @@ ForsakenFrame.SEB.MouseButton1Up:Connect(function()
 		for _, survivor in pairs(game.Workspace.Players.Survivors:GetChildren()) do
 			if survivor then
 
-				local ESP = survivor:WaitForChild("ArteGui_ESP")
-				ESP:Destroy()
+				local ESP = survivor:FindFirstChild("ArteGui_ESP")
+				if ESP then
+					ESP:Destroy()
+				end
 
 			end
 		end
@@ -591,8 +593,10 @@ ForsakenFrame.KEB.MouseButton1Up:Connect(function()
 		for _, killer in pairs(game.Workspace.Players.Killers:GetChildren()) do
 			if killer then
 
-				local ESP = killer:WaitForChild("ArteGui_ESP")
-				ESP:Destroy()
+				local ESP = killer:FindFirstChild("ArteGui_ESP")
+				if ESP then
+					ESP:Destroy()
+				end
 
 			end
 		end
@@ -607,7 +611,7 @@ ForsakenFrame.IEB.MouseButton1Up:Connect(function()
 			if item then
 				if item.Name ~= "Map" then
 
-					local ESP = Instance.new("Highlight", item)
+					local ESP = Instance.new("Highlight", item.ItemRoot)
 					ESP.Enabled = true
 					ESP.OutlineColor = Color3.new(0, 0.898039, 1)
 					ESP.FillTransparency = 1
@@ -622,8 +626,10 @@ ForsakenFrame.IEB.MouseButton1Up:Connect(function()
 			if item then
 				if item.Name ~= "Map" then
 
-					local ESP = item:WaitForChild("ArteGui_ESP")
-					ESP:Destroy()
+					local ESP = item.ItemRoot:FindFirstChild("ArteGui_ESP")
+					if ESP then
+						ESP:Destroy()
+					end
 
 				end
 			end
